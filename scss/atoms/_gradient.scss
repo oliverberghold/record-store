@@ -1,0 +1,6 @@
+.gradient {
+  background-color: $black;
+  @include up-md {
+    background: linear-gradient(to right, $black 50%,$white 50%,$black 50%,$white 50%);
+  }
+}

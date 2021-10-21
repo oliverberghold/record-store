@@ -1,0 +1,25 @@
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $gap * 3;
+  z-index: 1;
+  @include down-sm {
+    border-bottom: 1px solid $mine-shaft;
+    padding-bottom: $gap * 2;
+  }
+  @include up-sm {
+    margin-top: $gap * 7;
+  }
+}
+
+.navigation__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link {
+  color: inherit;
+  text-decoration: none;
+  color: $white;
+}

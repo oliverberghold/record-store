@@ -1,0 +1,67 @@
+.stage {
+  width: 100%;
+  max-height: $gap * 100;
+  position: relative;
+  background-image: url("../img/artists/benjamin-wagner-spOzMzSNcv8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include down-sm {
+    padding-top: 100%;
+  }
+  @include up-sm {
+    height: $gap * 70;
+  }
+  @include up-lg {
+    height: $gap * 100;
+  }
+}
+
+.stage-content {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  bottom: 5%;
+  left: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include up-sm {
+    height: 70%;
+  }
+}
+
+.artist-name {
+  margin: 0;
+  color: $white;
+  font-weight: 400;
+  font-size: 1em;
+  @include up-xs {
+    font-size: calc(1rem + ((1vw - 0.2em) * 0.5435));
+    min-height: 0;
+  }
+  @include up-xl {
+    font-size: 1.5;
+  }
+}
+
+.artist-quote {
+  font-family: 'Playfair Display', serif;
+  color: $white;
+  margin: 0;
+  font-size: 2.4em;
+  max-width: 85%;
+  @include up-xs {
+    font-size: calc(2.4rem + ((1vw - 0.2em) * 1.7391));
+  }
+  @include up-md {
+    max-width: 50%;
+  }
+  @include up-lg {
+    max-width: 45%;
+  }
+  @include up-xl {
+    font-size: 4em;
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $mine-shaft;
+}
+
+header {
+  background-color: black;
+  overflow: auto;
+}
+
+.main-categories {
+  display: flex;
+  margin: 0;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.section {
+  margin-top: $gap * 10;
+}

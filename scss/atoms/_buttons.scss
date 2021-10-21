@@ -1,0 +1,25 @@
+.button {
+  align-self: flex-start;
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+}
+
+.button--search-submit {
+  height: 100%;
+}
+
+.button--cta {
+  background-color: $milano-red;
+  color: $white;
+  padding: 1em;
+  font-size: .85em;
+}
+
+.button--product-detail {
+  background-color: $milano-red;
+  color: $white;
+  padding: .5em;
+  font-size: .85em;
+  margin-top: $gap * 2;
+}

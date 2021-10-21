@@ -1,0 +1,11 @@
+.main-content {
+  margin-top: $gap * 6;
+  @include up-sm {
+    display: grid;
+    grid-gap: $gap * 10;
+    grid-template-columns: 1fr 2fr;
+  }
+  @include up-md {
+    grid-template-columns: 1fr 3fr;
+  }
+}

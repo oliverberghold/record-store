@@ -1,0 +1,33 @@
+.navigation--customer {
+  display: flex;
+}
+
+.menu-link--icon {
+  height: $gap * 7;
+  width: $gap * 7;
+  display: block;
+  border-radius: 50%;
+  transition: all .2s ease-in;
+
+  &:hover {
+    background-color: rgba(191, 5, 5,.3);
+  }
+}
+
+.menu-link--account {
+  background-image: url("../img/icons/avatar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-link--cart {
+  background-image: url("../img/icons/cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-link--wish-list {
+  background-image: url("../img/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,134 @@
+.record {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #333;
+}
+
+.product-cover {
+  width: 40%;
+}
+
+.product-item {
+  display: flex;
+}
+
+.product-item--slide {
+  flex-direction: column;
+  @include up-md {
+    flex-direction: row;
+  }
+
+  .product-description {
+    @include up-md {
+      margin-left: $gap * 5;
+    }
+  }
+}
+
+.product-item--categories {
+  flex-direction: column;
+
+  .product-description {}
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  @include down-md {
+    margin-top: $gap * 4;
+  }
+}
+
+.records-by-catgetories {
+  display: grid;
+  grid-gap: $gap * 10;
+  padding: $gap * 10;
+  background-color: $white;
+  margin-top: $gap * 6;
+  @include up-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.product-image-wrapper {
+  flex-shrink: 0;
+  @include up-md {
+    width: 50%;
+  }
+}
+
+.product-author {
+  margin-top: $gap;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.product-image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.product-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.product-content {
+  margin-top: $gap * 2;
+  font-size: .9em;
+  line-height: 1.2;
+  @include up-sm {
+    display: none;
+  }
+  @include up-md {
+    display: block;
+  }
+}
+
+.product-rating {
+  margin-top: $gap * 2;
+}
+
+.rating-star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  border-right: .3em solid transparent;
+  border-bottom: .7em solid $milano-red;
+  border-left: .3em solid transparent;
+  font-size: .4em;
+
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: .7em solid $milano-red;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+  }
+
+  &:after {
+    transform: rotate(35deg);
+  }
+}
+
+.rating-star--low {
+  border-bottom-color: $silver-chalice;
+
+  &:after,
+  &:before {
+    border-bottom-color: $silver-chalice;
+  }
+}

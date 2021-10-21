@@ -1,0 +1,12 @@
+.avatar {
+  height: 40px;
+  width: 40px;
+}
+
+.avatar__image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}

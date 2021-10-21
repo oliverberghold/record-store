@@ -1,0 +1,89 @@
+.album-review {
+  display: flex;
+  margin-top: $gap * 4;
+  text-decoration: none;
+  color: inherit;
+  border-top: 1px solid $mine-shaft;
+  padding-top: $gap * 4;
+
+  &:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+  @include up-sm {
+    flex-direction: column;
+  }
+  @include up-md {
+    flex-direction: row;
+  }
+}
+
+.album-review__image-wrapper {
+  flex: 1 0 0;
+}
+
+.album-image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.album-review__description {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  @include down-s {
+    margin-left: $gap * 3;
+  }
+  @include up-s {
+    margin-top: $gap * 2;
+    flex: 2 0 0;
+  }
+  @include up-sm {
+    margin-left: 0;
+  }
+  @include up-md {
+    margin-top: 0;
+    margin-left: $gap * 3;
+  }
+}
+
+.album-author {
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  color: $white;
+}
+
+.album-title {
+  margin-top: $gap;
+  font-size: .9em;
+  font-weight: 400;
+  color: $white;
+}
+
+.album-description {
+  font-size: .8em;
+  line-height: 1.2;
+  @include up-sm {
+    display: none;
+  }
+  @include up-md {
+    display: block;
+  }
+}
+
+.review-author {
+  margin-top: $gap * 3;
+  color: $silver-chalice;
+  font-size: .8em;
+  display: flex;
+  align-items: center;
+}
+
+.author-portrait {
+  width: $gap * 3;
+  height: $gap * 3;
+  margin-right: $gap * 2;
+  border-radius: 50%;
+}

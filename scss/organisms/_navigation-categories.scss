@@ -1,0 +1,19 @@
+.navigation--categories {
+  display: none;
+  @include up-sm {
+    display: flex;
+  }
+}
+
+.navigation__menu--categories {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item--categories {
+  margin-left: $gap * 2;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}

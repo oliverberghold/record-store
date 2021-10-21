@@ -1,0 +1,30 @@
+.brand-wrapper {
+  display: flex;
+  justify-content: center;
+  height: $gap * 7;
+  margin-top: $gap * 7;
+}
+
+.brand {
+  background-image: url("../img/brand.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: $gap * 5;
+  height: $gap * 5;
+  @include up-sm {
+    width: $gap * 7;
+    height: $gap * 7;
+  }
+
+  span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}
